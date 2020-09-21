@@ -6,7 +6,16 @@
     <description>Recent content on 小陈村落</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
-    <lastBuildDate>Mon, 21 Sep 2020 20:47:21 +0800</lastBuildDate><atom:link href="https://Rahim-chan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Sep 2020 21:16:21 +0800</lastBuildDate><atom:link href="https://Rahim-chan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Webpack</title>
+      <link>https://Rahim-chan.github.io/posts/webpack/</link>
+      <pubDate>Mon, 21 Sep 2020 21:16:21 +0800</pubDate>
+      
+      <guid>https://Rahim-chan.github.io/posts/webpack/</guid>
+      <description>参考：Webpack Guidebook 构建过程 Webpack的运行流程是一个串行的过程： 初始化参数： 配置文件 &amp;amp; 命令行； 开始编译：通过配置参数初始化Compiler对象，加载所有配置的插件，执行对象的run方法开始执行</description>
+    </item>
+    
     <item>
       <title>Daily</title>
       <link>https://Rahim-chan.github.io/posts/daily/</link>

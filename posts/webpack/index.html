@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="cn" >
 <head>
-	<meta name="generator" content="Hugo 0.75.1" />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,11 +8,11 @@
 	
 	
 	
-	<title>小陈村落 ｜ 时光隧道 </title>
+	<title>Webpack ｜ 小陈村落</title>
 	
     
     
-    <meta name="description" content="厝 is Home" />
+    <meta name="description" content="参考：Webpack Guidebook 构建过程 Webpack的运行流程是一个串行的过程： 初始化参数： 配置文件 &amp;amp; 命令行； 开始编译：通过配置参数初始化Compiler对象，加载所有配置的插件，执行对象的run方法开始执行" />
     
 
     
@@ -22,8 +21,6 @@
     
 
 	
-	<link rel="alternate" type="application/rss+xml" href="https://Rahim-chan.github.io/index.xml" title="小陈村落" />
-    
     
     <link rel="shortcut icon" href="https://Rahim-chan.github.io/images/favicon.ico" />
 
@@ -44,19 +41,19 @@
         <ul>
             
             <li>
-                <a href="./">Home</a>
+                <a href="../../">Home</a>
             </li>
             
             <li>
-                <a href="./posts/">Archive</a>
+                <a href="../../posts/">Archive</a>
             </li>
             
             <li>
-                <a href="./tags/">Tags</a>
+                <a href="../../tags/">Tags</a>
             </li>
             
             <li>
-                <a href="./about/">About</a>
+                <a href="../../about/">About</a>
             </li>
             
         </ul>
@@ -105,62 +102,37 @@
     </div>
 </div>
         <div class="content">
-            
-
-<div class="post animated fadeInDown">
-    <div class="post_title">
-        <h2><a href='./posts/webpack/'>Webpack</a></h2>
-    </div>
-    
-    <div class="list">
-        <div class="post_content markdown">
-            <p>参考：Webpack Guidebook 构建过程 Webpack的运行流程是一个串行的过程： 初始化参数： 配置文件 &amp; 命令行； 开始编译：通过配置参数初始化Compiler对象，加载所有配置的插件，执行对象的run方法开始执行......</p>
-        </div>
-    </div>
-    
-    <div class="post_footer">
-        <div class="meta">
-            <div class="info">
-                <span class="field">
-                    <i class="ri-map-pin-time-line"></i>
-                    <span class="date">2020.09.21</span>
-                </span>
+            <div class="post_page">
+                <div class="post animate__animated animate__fadeInDown">
+                    <div class="post_title post_detail_title">
+                        <h2><a href='../../posts/webpack/'>Webpack</a></h2>
+                        <span class="date">2020.09.21</span>
+                    </div>
+                    <div class="post_content markdown"><p>参考：<a href="https://tsejx.github.io/webpack-guidebook/principle-analysis/implementation-principle/workflow">Webpack Guidebook</a></p>
+<h1 id="构建过程">构建过程</h1>
+<p>Webpack的运行流程是一个串行的过程：</p>
+<ol>
+<li>初始化参数： 配置文件 &amp; 命令行；</li>
+<li>开始编译：通过配置参数初始化Compiler对象，加载<code>所有配置的插件</code>，执行对象的<code>run</code>方法开始执行编译；</li>
+<li>确定入口：entry属性确定入口；</li>
+<li>编译模块：调用所有配置的loader对<strong>模块</strong>进行翻译，再找出模块的依赖，再递归直到所有文件入口依赖都经过了本步骤的处理；</li>
+<li>完成模块编译：得到每个模块翻译后以及它们之间的<strong>关系图</strong>；</li>
+<li>输出资源：根据文件入口与依赖关系，组装成Chunk，再把Chunk转化成单独的文件加入到列表中，这是最后一个修改内容的机会；</li>
+<li>输出完成：确定好<strong>输出内容</strong>后，按照配置和，把文件写入系统；</li>
+</ol>
+</div>
+                    <div class="post_footer">
+                        
+                    </div>
+                </div>
+                
+                
+                <div class="doc_comments"></div>
                 
             </div>
         </div>
     </div>
-</div>
-
-<div class="post animated fadeInDown">
-    <div class="post_title">
-        <h2><a href='./posts/daily/'>Daily</a></h2>
-    </div>
-    
-    <div class="list">
-        <div class="post_content markdown">
-            <p>记录每天零散的xxxxxxx 2020/9/21 TS readonly与const区别 两者都是防止re-assign readonly是编译时检查 const是在运行时检查 Object.freeze() 原型链不能修改 不能新增、删除已有属性；不能修改已有属......</p>
-        </div>
-    </div>
-    
-    <div class="post_footer">
-        <div class="meta">
-            <div class="info">
-                <span class="field">
-                    <i class="ri-map-pin-time-line"></i>
-                    <span class="date">2020.09.21</span>
-                </span>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="pagination">
-    
-</div>
-        </div>
-    </div>
+    <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
     <footer class="footer">
     <div class="powered_by">
         <a href="https://varkai.com">Designed by VarKai,</a>
