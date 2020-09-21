@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 小陈村落</title>
-    <link>/posts/</link>
+    <link>https://Rahim-chan.github.io/posts/</link>
     <description>Recent content in Posts on 小陈村落</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
-    <lastBuildDate>Mon, 21 Sep 2020 20:47:21 +0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Sep 2020 20:47:21 +0800</lastBuildDate><atom:link href="https://Rahim-chan.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily</title>
-      <link>/posts/daily/</link>
+      <link>https://Rahim-chan.github.io/posts/daily/</link>
       <pubDate>Mon, 21 Sep 2020 20:47:21 +0800</pubDate>
       
-      <guid>/posts/daily/</guid>
+      <guid>https://Rahim-chan.github.io/posts/daily/</guid>
       <description>记录每天零散的xxxxxxx 2020/9/21 TS readonly与const区别 两者都是防止re-assign readonly是编译时检查 const是在运行时检查 Object.freeze() 原型链不能修改 不能新增、删除已有属性；不能修改已有属</description>
     </item>
     
