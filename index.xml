@@ -6,7 +6,16 @@
     <description>Recent content on 小陈村落</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
-    <lastBuildDate>Fri, 25 Sep 2020 20:47:21 +0800</lastBuildDate><atom:link href="https://Rahim-chan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Oct 2020 14:27:54 +0800</lastBuildDate><atom:link href="https://Rahim-chan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MiniProgram</title>
+      <link>https://Rahim-chan.github.io/posts/miniprogram/</link>
+      <pubDate>Sun, 11 Oct 2020 14:27:54 +0800</pubDate>
+      
+      <guid>https://Rahim-chan.github.io/posts/miniprogram/</guid>
+      <description>参考：http://static.kancloud.cn/tatahy/weixin/710887 构成 在Web网页开发中渲染线程与脚步线程是互斥的；而小程序两者是分开的，分别在不同的内存里； 逻辑层 运行</description>
+    </item>
+    
     <item>
       <title>Daily Record</title>
       <link>https://Rahim-chan.github.io/posts/daily/</link>
