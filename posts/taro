@@ -1,0 +1,50 @@
+---
+title: "Taro"
+date: 2020-10-13T17:02:40+08:00
+draft: false
+---
+
+Taro新老版本对比
+
+## 老版本原理
+
+### 编译过程
+
+重编译，只是一个类React语法，通过AST处理，转换成小程序的代码；
+
+> 其中编译时主要是将 Taro 代码通过 [Babel](https://babeljs.io/) 转换成 小程序的代码，如：`JS`、`WXML`、`WXSS`、`JSON`。
+>
+> 运行时主要是进行一些：生命周期、事件、data 等部分的处理和对接。
+
+缺点：
+
+- 需要穷举JSX的语法，维护难度大；
+- JSX过于灵活导致编译的过程，用静态分析的方式去分析是一件很复杂的事情；
+- JSX灵活体现在哪里，可以通过js语句控制；
+- 不能在 JSX 参数中使用对象展开符
+- 不能使用 Array#map 之外的方法操作 JSX 数组
+- 暂不支持在 render() 之外的方法定义 JSX
+
+## 新版本
+
+### HostConfig自定义渲染器；
+
+React上Reconciler调度器和Renderer渲染器；
+
+渲染器原理：
+
+1. 根据原始创建自己VNODE节点，构建VNODE树（保留节点信息）；
+2. 初始化时把Vnode树更新为小程序的JSON树态数据；
+3. 小程序JSON更新XML数据；
+4. 基于base.xml 与可枚举的多个template模版遍历出小程序节点；
+
+## 参考
+
+https://juejin.im/post/6881597846307635214#heading-15
+
+
+
+
+
+
+
